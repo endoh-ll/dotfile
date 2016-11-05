@@ -137,7 +137,7 @@ alias encrypt-pw="~/bin/encrypt-pw/encrypt-pw_darwin_386"
 
 # masterへのpushを簡略化
 # ggpushと同義
-alias gpob="git push origin $(git_current_branch)"
+alias gpob="ggpush"
 
 # 強制push
 alias ggpf="git push -f origin $(git_current_branch)"
