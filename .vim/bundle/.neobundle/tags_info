@@ -1,0 +1,16 @@
+molokai
+neobundle.vim
+neosnippet-snippets
+neosnippet.vim
+syntastic
+tcomment_vim
+vim-colorschemes
+vim-dirvish
+vim-endwise
+vim-expand-region
+vim-fugitive
+vim-indent-guides
+vim-rails
+vim-slim
+vim-trailing-whitespace
+vimshell

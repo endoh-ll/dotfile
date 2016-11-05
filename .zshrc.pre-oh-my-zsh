@@ -1,0 +1,26 @@
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+alias la='ls -la'
+alias ll='ls -la'
+
+alias gitb='git branch'
+
+alias grep='grep --color'
+alias df='df -h'
+
+
+export ELASTIC_PATH=/usr/local/Cellar/elasticsearch/2.4.0/libexec/bin/plugin
+PATH=$PATH:/usr/local/Cellar/mysql55/5.5.49/bin/:$ELASTIC_PATH
+
+export HISTSIZE=500000
+export HISTTIMEFORMAT='%Y/%m/%d %H:%M:%S '
+PATH=$PATH:/usr/local/Cellar/mysql55/5.5.49/bin/
+
+
+fpath=(/path/to/homebrew/share/zsh-completions $fpath)
+autoload -U compinit
+compinit -u
+
+
+export PATH
