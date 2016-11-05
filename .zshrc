@@ -116,19 +116,35 @@ fpath=(/path/to/homebrew/share/zsh-completions $fpath)
 # vim風
 bindkey -v
 
-#############################
-#### alias ##################
-#############################
+####################################
+#### alias start  ##################
+####################################
 alias hist=history
 alias v=vim
 alias df="df -h"
+
 # bundle checkでinstallの必要があった場合のみbundle installするように修正
 alias beck="bundle check > /dev/null || bundle install --path=vendor/bundle --jobs=4 > /dev/null"
 alias berc="beck; bundle exec rails console"
 alias berr="beck; bundle exec rake routes"
 alias bers="beck; bundle exec rails server"
+
+# console上からexcelを開く
 alias excel="open -a Microsoft\ Excel"
+
+# 暗号生成コマンド
 alias encrypt-pw="~/bin/encrypt-pw/encrypt-pw_darwin_386"
+
+# masterへのpushを簡略化
+# ggpushと同義
+alias gpob="git push origin $(git_current_branch)"
+
+# 強制push
+alias ggpf="git push -f origin $(git_current_branch)"
+####################################
+#### alias start  ##################
+####################################
+
 
 # 履歴の検索
 autoload history-search-end
