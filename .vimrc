@@ -119,6 +119,10 @@ NeoBundle 'bronson/vim-trailing-whitespace'
 "ディレクトリをツリー表示"
 "NeoBundle 'scrooloose/nerdtree'
 
+" ファイルを開いた履歴を管理
+" :MRUで一覧表示
+NeoBundle 'yegappan/mru'
+
 " インデントに色を付けて見やすくする
 NeoBundle 'nathanaelkane/vim-indent-guides'
 
