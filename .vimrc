@@ -89,12 +89,13 @@ NeoBundle 'Shougo/neosnippet.vim'
 NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'tpope/vim-fugitive'
 "NeoBundle 'ctrlpvim/ctrlp.vim'
-NeoBundle 'flazz/vim-colorschemes'
 
 NeoBundle 'terryma/vim-expand-region'
 
 " カラーテーマ追加
+NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'tomasr/molokai'
+NeoBundle 'altercation/vim-colors-solarized'
 
 " NERDTreeよりも高速でファイル検索&移動
 NeoBundle 'justinmk/vim-dirvish'
@@ -122,6 +123,8 @@ NeoBundle 'bronson/vim-trailing-whitespace'
 " ファイルを開いた履歴を管理
 " :MRUで一覧表示
 NeoBundle 'yegappan/mru'
+
+
 
 " インデントに色を付けて見やすくする
 NeoBundle 'nathanaelkane/vim-indent-guides'

@@ -5,6 +5,7 @@ neosnippet-snippets
 neosnippet.vim
 syntastic
 tcomment_vim
+vim-colors-solarized
 vim-colorschemes
 vim-dirvish
 vim-endwise
