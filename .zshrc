@@ -1,10 +1,16 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=/usr/local/bin:$PATH
-export PATH=$HOME/.rbenv/bin:$PATH
 export PATH=/usr/local/bin/vim:$PATH
 
+# rubyのバージョン管理ツールの設定
+export PATH=$HOME/.rbenv/bin:$PATH
 eval "$(rbenv init -)"
+
+# pythonのバージョン管理ツールの設定
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/shogo/.oh-my-zsh
