@@ -34,6 +34,7 @@ set backspace=indent,eol,start
 
 
 " Keybind -----------------------------------
+
 " 検索結果のハイライトをEsc連打でクリアする
 nnoremap <ESC><ESC> :nohlsearch<CR>
 
@@ -68,6 +69,9 @@ nnoremap <BS>r g'r
 " <C-v>で1つ前のレベルに戻せる
 vmap v <Plug>(expand_region_expand)
 vmap <C-v> <Plug>(expand_region_shrink)
+
+" <C-a>で全範囲選択
+nnoremap <C-a> ggvGG
 
 "NeoBundle Scripts-----------------------------
 if &compatible
