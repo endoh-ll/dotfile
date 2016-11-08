@@ -74,7 +74,7 @@ vmap v <Plug>(expand_region_expand)
 vmap <C-v> <Plug>(expand_region_shrink)
 
 " <C-a>で全範囲選択
-nnoremap <C-a> ggvGG
+nnoremap <C-a> ggvGG$
 
 "NeoBundle Scripts-----------------------------
 if &compatible
@@ -234,4 +234,3 @@ function! s:GetHighlight(hi)
   return hl
 endfunction
 """"""""""""""""""""""""""""""
-
