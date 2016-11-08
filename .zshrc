@@ -148,7 +148,7 @@ alias gpob="ggpush"
 # 強制push
 alias ggpf="git push -f origin $(git_current_branch)"
 ####################################
-#### alias start  ##################
+#### alias end ##################
 ####################################
 
 
