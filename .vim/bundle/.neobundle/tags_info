@@ -15,4 +15,5 @@ vim-indent-guides
 vim-rails
 vim-slim
 vim-trailing-whitespace
+vimdoc-ja
 vimshell

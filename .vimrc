@@ -30,6 +30,9 @@ set incsearch
 " インサートモードで入力した文字が消せなくなった場合
 " http://qiita.com/omega999/items/23aec6a7f6d6735d033f
 set backspace=indent,eol,start
+
+" helpを日本語化
+set helplang=ja,en
 " --------------------------------------------
 
 
@@ -128,6 +131,8 @@ NeoBundle 'bronson/vim-trailing-whitespace'
 " :MRUで一覧表示
 NeoBundle 'yegappan/mru'
 
+" 日本語helpを読み込む
+NeoBundle 'vim-jp/vimdoc-ja'
 
 
 " インデントに色を付けて見やすくする
