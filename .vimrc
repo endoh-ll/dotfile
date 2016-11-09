@@ -43,7 +43,7 @@ set helplang=ja,en
 "==============================================
 
 " 検索結果のハイライトをEsc連打でクリアする
-nnoremap <ESC><ESC> :nohlsearch<CR>
+nnoremap <silent><ESC><ESC> :nohlsearch<CR>
 
 " Leaderを<Space>キーに置き換える
 " http://postd.cc/how-to-boost-your-vim-productivity/
