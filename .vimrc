@@ -35,6 +35,7 @@ set backspace=indent,eol,start
 
 " helpを日本語化
 set helplang=ja,en
+
 " --------------------------------------------
 
 
@@ -154,6 +155,9 @@ NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
 " vim slim
 NeoBundle 'slim-template/vim-slim.git'
 
+" denite.nvim
+NeoBundle 'Shougo/denite.nvim'
+
 " Required:
 call neobundle#end()
 
@@ -244,4 +248,10 @@ function! s:GetHighlight(hi)
   let hl = substitute(hl, 'xxx', '', '')
   return hl
 endfunction
+""""""""""""""""""""""""""""""
+
+""""""""""""""""""""""""""""""
+" denite.vimの設定
+
+let g:python3_host_prog = expand('~/.pyenv/shims/python')
 """"""""""""""""""""""""""""""
