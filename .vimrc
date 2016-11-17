@@ -158,6 +158,9 @@ NeoBundle 'slim-template/vim-slim.git'
 " denite.nvim
 NeoBundle 'Shougo/denite.nvim'
 
+" vim-go
+NeoBundle 'fatih/vim-go'
+
 " Required:
 call neobundle#end()
 

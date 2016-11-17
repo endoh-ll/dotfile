@@ -12,6 +12,7 @@ vim-dirvish
 vim-endwise
 vim-expand-region
 vim-fugitive
+vim-go
 vim-indent-guides
 vim-rails
 vim-slim
