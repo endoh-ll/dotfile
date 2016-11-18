@@ -56,6 +56,10 @@ nnoremap <Leader>q :q<CR>
 " <Space>wpでファイル保存後終了
 nnoremap <Leader>wq :wq<CR>
 
+" <Space>2回でノーマルモードに戻る
+" 空白が2回入れたかったら<Tab>を使ってほしい
+inoremap <Leader><Leader> <ESC>
+
 " <Space>pと<Space>yでクリップボードに保存
 nmap <Leader>y "+y
 vmap <Leader>y "+y
@@ -173,7 +177,6 @@ NeoBundleCheck
 "=================================================
 "  "End NeoBundle Scripts ------------------------
 "=================================================
-
 
 
 
