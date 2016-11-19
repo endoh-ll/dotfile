@@ -115,6 +115,7 @@ setopt hist_reduce_blanks
 
 # コマンド入力ミスの補完
 setopt correct
+:q
 
 # zsh-completionsの設定
 fpath=(/path/to/homebrew/share/zsh-completions $fpath)
@@ -142,11 +143,11 @@ alias excel="open -a Microsoft\ Excel"
 alias encrypt-pw="~/bin/encrypt-pw/encrypt-pw_darwin_386"
 
 # masterへのpushを簡略化
+# git push origin $(current_branch)  の略
 # ggpushと同義
 alias gpob="ggpush"
-
 # 強制push
-alias ggpf="git push -f origin $(git_current_branch)"
+alias ggpf="ggpush -f"
 
 # go
 alias 5="go"
