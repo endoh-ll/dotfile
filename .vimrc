@@ -269,5 +269,3 @@ let g:python3_host_prog = expand('~/.pyenv/shims/python')
 set laststatus=2
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ \[ENC=%{&fileencoding}]%P
 """""""""""""""""""""""""""""
-
-" prのテスト
