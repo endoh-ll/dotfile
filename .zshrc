@@ -115,7 +115,6 @@ setopt hist_reduce_blanks
 
 # コマンド入力ミスの補完
 setopt correct
-:q
 
 # zsh-completionsの設定
 fpath=(/path/to/homebrew/share/zsh-completions $fpath)
