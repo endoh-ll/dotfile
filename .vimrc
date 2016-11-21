@@ -58,7 +58,8 @@ nnoremap <Leader>wq :wq<CR>
 
 " <Space>2回でノーマルモードに戻る
 " 空白が2回入れたかったら<Tab>を使ってほしい
-inoremap <Leader><Leader> <ESC>
+" 空白の入力が遅れるのでコメントアウト
+" inoremap <Leader><Leader> <ESC>
 
 " <Space>pと<Space>yでクリップボードに保存
 nmap <Leader>y "+y
