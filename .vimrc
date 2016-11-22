@@ -146,6 +146,8 @@ NeoBundle 'yegappan/mru'
 " 日本語helpを読み込む
 NeoBundle 'vim-jp/vimdoc-ja'
 
+" markdown
+NeoBundle 'tpope/vim-markdown'
 
 " インデントに色を付けて見やすくする
 NeoBundle 'nathanaelkane/vim-indent-guides'
@@ -269,4 +271,10 @@ let g:python3_host_prog = expand('~/.pyenv/shims/python')
 
 set laststatus=2
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ \[ENC=%{&fileencoding}]%P
+"""""""""""""""""""""""""""""
+
+"""""""""""""""""""""""""""""
+" vim-markdownの設定
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+
 """""""""""""""""""""""""""""

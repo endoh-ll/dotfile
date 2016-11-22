@@ -14,6 +14,7 @@ vim-expand-region
 vim-fugitive
 vim-go
 vim-indent-guides
+vim-markdown
 vim-rails
 vim-slim
 vim-trailing-whitespace
