@@ -122,6 +122,11 @@ fpath=(/path/to/homebrew/share/zsh-completions $fpath)
 # vim風
 bindkey -v
 
+# bundleのeditorを設定
+# bundle open [gem name]でinstallしたgemのインストールディレクトリを開けるようになる
+# bundle show [gem name]では絶対pathが見える
+export EDITOR=/usr/local/bin/vim
+
 ####################################
 #### alias start  ##################
 ####################################
