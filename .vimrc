@@ -92,6 +92,16 @@ vmap <C-v> <Plug>(expand_region_shrink)
 " <C-a>で全範囲選択
 nnoremap <C-a> ggvGG$
 
+" <Space-:>でコマンド履歴表示
+" <Space-/>で検索履歴表示
+nnoremap <Leader>: q:
+nnoremap <Leader>; q/
+
+" q:、q/、q? は無効化
+nnoremap q: <NOP>
+nnoremap q/ <NOP>
+nnoremap q? <NOP>
+
 "==============================================
 "NeoBundle Scripts ----------------------------
 "==============================================
