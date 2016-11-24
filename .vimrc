@@ -82,9 +82,6 @@ nnoremap <CR><CR> mrG
 nnoremap <BS><BS> mrgg
 nnoremap <CR>r g'r
 nnoremap <BS>r g'r
-nnoremap gg mrgg
-nnoremap <S-g> mr<S-g>
-
 
 " 選択範囲をvで単語、段落、行...と拡大できる
 " <C-v>で1つ前のレベルに戻せる
