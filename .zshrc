@@ -15,6 +15,12 @@ eval "$(pyenv init -)"
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/shogo/.oh-my-zsh
 
+# Path to Go root
+# export GOROOT=/usr/local/Cellar/go/1.7.3/bin/
+# Path to Go get
+export GOPATH=$HOME/.go
+
+
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes

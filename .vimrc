@@ -41,6 +41,10 @@ set wildmenu wildmode=list:longest,full
 " コマンドラインの履歴を10000件保存する
 set history=10000
 
+" goの補完を有効にする
+exe "set rtp+=".globpath($GOPATH, "src/github.com/nsf/gocode/vim")
+set completeopt=menu,preview
+
 " --------------------------------------------
 "
 
