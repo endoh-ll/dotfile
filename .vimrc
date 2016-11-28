@@ -45,6 +45,12 @@ set history=10000
 exe "set rtp+=".globpath($GOPATH, "src/github.com/nsf/gocode/vim")
 set completeopt=menu,preview
 
+" vim-json用
+" カーソル位置のキー名に""を付与しない
+" https://github.com/elzr/vim-json
+let g:vim_json_syntax_conceal = 0
+let g:indentLine_noConcealCursor=""
+
 " --------------------------------------------
 "
 
@@ -183,6 +189,9 @@ NeoBundle 'slim-template/vim-slim.git'
 
 " denite.nvim
 NeoBundle 'Shougo/denite.nvim'
+
+" vim-json
+NeoBundle 'elzr/vim-json'
 
 " vim-go
 NeoBundle 'fatih/vim-go'
