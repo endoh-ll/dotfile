@@ -173,6 +173,10 @@ zle -N history-beginning-search-forward-end history-search-end
 bindkey "^P" history-beginning-search-backward-end
 bindkey "^N" history-beginning-search-forward-end
 
+# 行の先頭に移動
+bindkey "^A" beginning-of-line
+
+
 # mysqlのpath
 PATH=$PATH:/usr/local/Cellar/mysql55/5.5.49/bin/
 export PATH
