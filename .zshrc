@@ -161,6 +161,10 @@ alias ggpf="ggpush -f"
 
 # go
 alias 5="go"
+
+
+# git grep の結果に行番号を付与
+alias gggrep="git grep --heading --break"
 ####################################
 #### alias end #####################
 ####################################
