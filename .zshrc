@@ -180,6 +180,8 @@ bindkey "^N" history-beginning-search-forward-end
 # 行の先頭に移動
 bindkey "^A" beginning-of-line
 
+#C-Uで行頭まで削除
+bindkey "^U" backward-kill-line
 
 # mysqlのpath
 PATH=$PATH:/usr/local/Cellar/mysql55/5.5.49/bin/
