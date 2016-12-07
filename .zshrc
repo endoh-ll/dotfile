@@ -15,6 +15,9 @@ eval "$(pyenv init -)"
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/shogo/.oh-my-zsh
 
+# ctagsへのpathを置き換える
+alias ctags='/usr/local/Cellar/ctags/5.8_1/bin/ctags'
+
 # Path to Go root
 # export GOROOT=/usr/local/Cellar/go/1.7.3/bin/
 # Path to Go get
