@@ -298,7 +298,7 @@ let g:python3_host_prog = expand('~/.pyenv/shims/python')
 " vim-fugitiveの設定
 
 set laststatus=2
-set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ \[ENC=%{&fileencoding}]%P
+set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)%P\ \[ENC=%{&fileencoding}]\ 
 """""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""
