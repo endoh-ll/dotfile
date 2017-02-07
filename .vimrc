@@ -196,6 +196,9 @@ NeoBundle 'elzr/vim-json'
 " vim-go
 NeoBundle 'fatih/vim-go'
 
+" coffee-script
+NeoBundle 'kchmck/vim-coffee-script'
+
 " Required:
 call neobundle#end()
 
