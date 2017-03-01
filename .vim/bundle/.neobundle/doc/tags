@@ -727,15 +727,6 @@ denite-usage	denite.txt	/*denite-usage*
 denite.txt	denite.txt	/*denite.txt*
 denite.vim	denite.txt	/*denite.vim*
 denite_default_key_mappings	denite.txt	/*denite_default_key_mappings*
-dirvish	dirvish.txt	/*dirvish*
-dirvish-:Dirvish	dirvish.txt	/*dirvish-:Dirvish*
-dirvish-:Shdo	dirvish.txt	/*dirvish-:Shdo*
-dirvish-commands	dirvish.txt	/*dirvish-commands*
-dirvish-faq	dirvish.txt	/*dirvish-faq*
-dirvish-functions	dirvish.txt	/*dirvish-functions*
-dirvish-mappings	dirvish.txt	/*dirvish-mappings*
-dirvish-options	dirvish.txt	/*dirvish-options*
-dirvish.txt	dirvish.txt	/*dirvish.txt*
 expand-region-about	expand_region.txt	/*expand-region-about*
 expand-region-contents	expand_region.txt	/*expand-region-contents*
 expand-region-global-options	expand_region.txt	/*expand-region-global-options*
@@ -802,7 +793,6 @@ fugitive-statusline	fugitive.txt	/*fugitive-statusline*
 fugitive-y_CTRL-G	fugitive.txt	/*fugitive-y_CTRL-G*
 fugitive-~	fugitive.txt	/*fugitive-~*
 fugitive.txt	fugitive.txt	/*fugitive.txt*
-g:dirvish_relative_paths	dirvish.txt	/*g:dirvish_relative_paths*
 g:neobundle#cache_file	neobundle.txt	/*g:neobundle#cache_file*
 g:neobundle#default_options	neobundle.txt	/*g:neobundle#default_options*
 g:neobundle#default_site	neobundle.txt	/*g:neobundle#default_site*

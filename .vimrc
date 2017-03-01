@@ -111,8 +111,8 @@ nnoremap q: <NOP>
 nnoremap q/ <NOP>
 nnoremap q? <NOP>
 
-" <C-e>でNERDTreeを表示/非表示切り替え
-nnoremap <silent><C-e> :NERDTreeToggle<CR>
+" -でNERDTreeを表示/非表示切り替え
+nnoremap <silent>- :lcd %:h<CR>:NERDTreeToggle<CR>
 "==============================================
 "NeoBundle Scripts ----------------------------
 "==============================================
@@ -144,7 +144,7 @@ NeoBundle 'tomasr/molokai'
 NeoBundle 'altercation/vim-colors-solarized'
 
 " NERDTreeよりも高速でファイル検索&移動
-NeoBundle 'justinmk/vim-dirvish'
+" NeoBundle 'justinmk/vim-dirvish'
 
 NeoBundle 'tpope/vim-rails'
 
