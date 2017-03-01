@@ -155,13 +155,6 @@ alias excel="open -a Microsoft\ Excel"
 # 暗号生成コマンド
 alias encrypt-pw="~/bin/encrypt-pw/encrypt-pw_darwin_386"
 
-# masterへのpushを簡略化
-# git push origin $(current_branch)  の略
-# ggpushと同義
-alias gpob="ggpush"
-# 強制push
-alias ggpf="ggpush -f"
-
 # go
 alias 5="go"
 
