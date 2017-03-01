@@ -4,12 +4,12 @@ mru
 neobundle.vim
 neosnippet-snippets
 neosnippet.vim
-nerdtree
 syntastic
 tcomment_vim
 vim-coffee-script
 vim-colors-solarized
 vim-colorschemes
+vim-dirvish
 vim-endwise
 vim-expand-region
 vim-fugitive

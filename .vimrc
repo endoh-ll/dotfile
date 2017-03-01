@@ -112,7 +112,7 @@ nnoremap q/ <NOP>
 nnoremap q? <NOP>
 
 " -でNERDTreeを表示/非表示切り替え
-nnoremap <silent>- :lcd %:h<CR>:NERDTreeToggle<CR>
+" nnoremap <silent>- :lcd %:h<CR>:NERDTreeToggle<CR>
 "==============================================
 "NeoBundle Scripts ----------------------------
 "==============================================
@@ -144,7 +144,7 @@ NeoBundle 'tomasr/molokai'
 NeoBundle 'altercation/vim-colors-solarized'
 
 " NERDTreeよりも高速でファイル検索&移動
-" NeoBundle 'justinmk/vim-dirvish'
+NeoBundle 'justinmk/vim-dirvish'
 
 NeoBundle 'tpope/vim-rails'
 
@@ -163,8 +163,8 @@ NeoBundle 'tomtom/tcomment_vim'
 " :FixWhitespaceで行末の半角スペースを自動削除
 NeoBundle 'bronson/vim-trailing-whitespace'
 
-"ディレクトリをツリー表示"
-NeoBundle 'scrooloose/nerdtree'
+"NERD ディレクトリをツリー表示"
+" NeoBundle 'scrooloose/nerdtree'
 
 " ファイルを開いた履歴を管理
 " :MRUで一覧表示
