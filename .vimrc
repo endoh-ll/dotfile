@@ -45,6 +45,9 @@ set history=10000
 exe "set rtp+=".globpath($GOPATH, "src/github.com/nsf/gocode/vim")
 set completeopt=menu,preview
 
+" 現在の行位置を表示
+set cursorline
+
 " vim-json用
 " カーソル位置のキー名に""を付与しない
 " https://github.com/elzr/vim-json
@@ -56,7 +59,7 @@ let g:indentLine_noConcealCursor=""
 
 
 "==============================================
-" Keybind -------------------------------------
+" keybind -------------------------------------
 "==============================================
 
 " 検索結果のハイライトをEsc連打でクリアする
@@ -114,7 +117,7 @@ nnoremap q? <NOP>
 " -でNERDTreeを表示/非表示切り替え
 " nnoremap <silent>- :lcd %:h<CR>:NERDTreeToggle<CR>
 "==============================================
-"NeoBundle Scripts ----------------------------
+"neoBundle scripts ----------------------------
 "==============================================
 if &compatible
   set nocompatible               " Be iMproved
@@ -221,7 +224,7 @@ NeoBundleCheck
 
 
 "=================================================
-"  " Vim Scripts ---------------------------------
+"  " vim scripts ---------------------------------
 "=================================================
 
 """""""""""""""""""""""""""""
