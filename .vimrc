@@ -46,7 +46,7 @@ exe "set rtp+=".globpath($GOPATH, "src/github.com/nsf/gocode/vim")
 set completeopt=menu,preview
 
 " 現在の行位置を表示
-set cursorline
+" set cursorline
 
 " vim-json用
 " カーソル位置のキー名に""を付与しない
