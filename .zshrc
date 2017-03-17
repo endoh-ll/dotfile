@@ -161,6 +161,8 @@ alias encrypt-pw="~/bin/encrypt-pw/encrypt-pw_darwin_386"
 # go
 alias 5="go"
 
+# git rebaseする際にmasterを最新版にしてからrebaseする
+alias grbmp="gcm; ggpull; gco -; grbm;"
 
 # git grep の結果に行番号を付与
 alias gggrep="git grep --heading --break"
