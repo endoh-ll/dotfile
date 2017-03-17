@@ -165,7 +165,7 @@ alias 5="go"
 alias grbmp="gcm; ggpull; gco -; grbm;"
 
 # 直近の移動したbranchを表示する
-alias gblog="git --no-pager reflog | awk '\$3 == \"checkout:\" && /moving from/ {print \$8}' | grep -v master | uniq | head"
+alias gcolog="git --no-pager reflog | awk '\$3 == \"checkout:\" && /moving from/ {print \$8}' | grep -v master | uniq | head"
 
 # git grep の結果に行番号を付与
 alias gggrep="git grep --heading --break"
