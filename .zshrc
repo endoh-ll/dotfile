@@ -172,6 +172,10 @@ alias tcal="cal | grep -C6 --color '`date +' %-d '`'  "
 
 # git grep の結果に行番号を付与
 alias gggrep="git grep --heading --break"
+
+# zshの設定のon/offを一覧表示
+alias showoptions="set -o | sed -e 's/^no\(.*\)on$/\1  off/' -e 's/^no\(.*\)off$/\1  on/'"
+
 ####################################
 #### alias end #####################
 ####################################
