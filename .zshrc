@@ -152,6 +152,9 @@ alias bers="beck; bundle exec rails server"
 # console上からexcelを開く
 alias excel="open -a Microsoft\ Excel"
 
+# soncole上からsublime textを開く
+alias sublime="open -a Sublime\ Text"
+
 # 暗号生成コマンド
 alias encrypt-pw="~/bin/encrypt-pw/encrypt-pw_darwin_386"
 
