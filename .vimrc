@@ -49,6 +49,9 @@ set completeopt=menu,preview
 " 入力中のコマンドを表示
 set showcmd
 
+" 画面スクロールを指定した行前から行なう
+set scrolloff=5
+
 " vim-json用
 " カーソル位置のキー名に""を付与しない
 " https://github.com/elzr/vim-json
