@@ -49,7 +49,7 @@ set completeopt=menu,preview
 " 入力中のコマンドを表示
 set showcmd
 
-" 画面スクロールを指定した行前から行なう
+" 指定した行前からスクロールを行なう
 set scrolloff=5
 
 " vim-json用
