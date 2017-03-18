@@ -23,9 +23,6 @@ highlight LineNr ctermfg=darkyellow
 filetype plugin indent on
 colorscheme ron
 
-" 改行時の自動コメントアウトを無効化
-set formatoptions-=ro
-
 "インクリメンタルサーチを行う
 set incsearch
 
@@ -51,6 +48,10 @@ set showcmd
 
 " 指定した行前からスクロールを行なう
 set scrolloff=5
+
+" formatoptionsを無効にする
+" 本来なら set formatoptions=tcq だけで済むはずだがうまくいかない
+set paste
 
 " vim-json用
 " カーソル位置のキー名に""を付与しない
