@@ -91,6 +91,7 @@ vmap <Leader>P "+P
 
 " ファイルの先頭と末尾に移動
 " うっかり移動してもg'rで戻ってこれる
+" 連打されると戻れない
 nnoremap <CR><CR> mrG
 nnoremap <BS><BS> mrgg
 nnoremap <CR>r g'r
