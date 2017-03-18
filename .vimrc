@@ -46,6 +46,8 @@ exe "set rtp+=".globpath($GOPATH, "src/github.com/nsf/gocode/vim")
 set completeopt=menu,preview
 
 
+" 入力中のコマンドを表示
+set showcmd
 
 " vim-json用
 " カーソル位置のキー名に""を付与しない
