@@ -49,6 +49,12 @@ set showcmd
 " 指定した行前からスクロールを行なう
 set scrolloff=5
 
+"ビープ音すべてを無効にする
+set visualbell
+set t_vb=
+"エラーメッセージの表示時にビープを鳴らさない
+set noerrorbells
+
 " vim-json用
 " カーソル位置のキー名に""を付与しない
 " https://github.com/elzr/vim-json
