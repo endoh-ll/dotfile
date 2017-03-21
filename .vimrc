@@ -49,10 +49,6 @@ set showcmd
 " 指定した行前からスクロールを行なう
 set scrolloff=5
 
-" formatoptionsを無効にする
-" 本来なら set formatoptions=tcq だけで済むはずだがうまくいかない
-set paste
-
 " vim-json用
 " カーソル位置のキー名に""を付与しない
 " https://github.com/elzr/vim-json
