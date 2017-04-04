@@ -176,6 +176,7 @@ alias gggrep="git grep --heading --break"
 # zshの設定のon/offを一覧表示
 alias showoptions="set -o | sed -e 's/^no\(.*\)on$/\1  off/' -e 's/^no\(.*\)off$/\1  on/'"
 
+alias gl='git log'
 ####################################
 #### alias end #####################
 ####################################
