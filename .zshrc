@@ -195,6 +195,10 @@ bindkey "^E" end-of-line
 #C-Uで行頭まで削除
 bindkey "^U" backward-kill-line
 
+# C-ESC-u or C-ESC-rでコマンド入力をしながらundo/redo
+bindkey "^[u" undo
+bindkey "^[r" redo
+
 # mysqlのpath
 PATH=$PATH:/usr/local/Cellar/mysql55/5.5.49/bin/
 export PATH
