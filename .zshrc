@@ -190,7 +190,7 @@ bindkey "^N" history-beginning-search-forward-end
 
 # 行の先頭に移動
 bindkey "^A" beginning-of-line
-bindkey "^S" end-of-line
+bindkey "^E" end-of-line
 
 #C-Uで行頭まで削除
 bindkey "^U" backward-kill-line
