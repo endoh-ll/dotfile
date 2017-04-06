@@ -124,6 +124,10 @@ nnoremap q? <NOP>
 
 " -でNERDTreeを表示/非表示切り替え
 " nnoremap <silent>- :lcd %:h<CR>:NERDTreeToggle<CR>
+"
+" C-h と C-kでタグジャンプ & 画面分割
+nnoremap <C-h> :vsp<CR> :exe("tjump ".expand('<cword>'))<CR>
+nnoremap <C-k> :split<CR> :exe("tjump ".expand('<cword>'))<CR>
 
 
 "==============================================
@@ -216,6 +220,9 @@ NeoBundle 'kchmck/vim-coffee-script'
 
 " vim-gitgutter
 NeoBundle 'airblade/vim-gitgutter'
+
+" vim-tags
+NeoBundle 'szw/vim-tags'
 
 " Required:
 call neobundle#end()

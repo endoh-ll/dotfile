@@ -20,6 +20,7 @@ vim-json
 vim-markdown
 vim-rails
 vim-slim
+vim-tags
 vim-trailing-whitespace
 vimdoc-ja
 vimshell
