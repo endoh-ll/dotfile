@@ -210,6 +210,18 @@ source $ZPLUG_HOME/init.zsh
 
 
 
+# タブの色を変更
+#関数定義(引数3つ) r,g,bの順
+tab-color() {
+    echo -ne "\033]6;1;bg;red;brightness;$1\a"
+    echo -ne "\033]6;1;bg;green;brightness;$2\a"
+    echo -ne "\033]6;1;bg;blue;brightness;$3\a"
+}
+
+tab-reset() {
+    echo -ne "\033]6;1;bg;*;default\a"
+}
+
 
 
 
