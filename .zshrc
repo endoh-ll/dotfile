@@ -216,6 +216,10 @@ source $ZPLUG_HOME/init.zsh
 # https://github.com/paulirish/git-open
 zplug "paulirish/git-open", as:command
 
+# 'git recent'で過去に切り替えたブランチの一覧を開く
+# https://github.com/paulirish/git-recent
+zplug "paulirish/git-recent", as:command
+
 # check コマンドで未インストール項目があるかどうか verbose にチェックし
 # false のとき（つまり未インストール項目がある）y/N プロンプトで
 # インストールする
