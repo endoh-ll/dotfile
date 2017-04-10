@@ -212,6 +212,25 @@ export PATH
 export ZPLUG_HOME=/usr/local/opt/zplug
 source $ZPLUG_HOME/init.zsh
 
+# 'git open'でリポジトリのページを開く
+# https://github.com/paulirish/git-open
+zplug "paulirish/git-open", as:command
+
+# check コマンドで未インストール項目があるかどうか verbose にチェックし
+# false のとき（つまり未インストール項目がある）y/N プロンプトで
+# インストールする
+if ! zplug check --verbose; then
+  printf "Install? [y/N]: "
+  if read -q; then
+    echo; zplug install
+  fi
+fi
+
+# プラグインを読み込み、コマンドにパスを通す
+zplug load --verbose
+
+
+
 ####################################
 #### plugin end ####################
 ####################################
