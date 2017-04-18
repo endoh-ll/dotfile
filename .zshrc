@@ -177,6 +177,9 @@ alias gggrep="git grep --heading --break"
 alias showoptions="set -o | sed -e 's/^no\(.*\)on$/\1  off/' -e 's/^no\(.*\)off$/\1  on/'"
 
 alias gl='git log'
+
+# tcalがcalの下位互換を持っているので、calでtcalを呼ぶようにする
+alias cal=tcal
 ####################################
 #### alias end #####################
 ####################################
