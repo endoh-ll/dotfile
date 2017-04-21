@@ -1,0 +1,28 @@
+[core]
+	excludesfile = /Users/shogo/.gitignore
+  editor = /usr/local/bin/vim
+	pager = lv -c
+[user]
+	name = Shogo Endo
+	email = endoh@logiclogic.jp
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[merge]
+	conflictstyle = diff3
+[color]
+	ui = auto
+	diff = auto
+	status = auto
+	branch = auto
+[grep]
+	lineNumber = true
+[alias]
+  st = !git status -s && echo --- branch && git branch -v && echo --- stash && git stash list | cat
