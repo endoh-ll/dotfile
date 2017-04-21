@@ -181,7 +181,9 @@ alias gl='git log'
 # tcalがcalの下位互換を持っているので、calでtcalを呼ぶようにする
 alias cal=tcal
 
-alias cp='(){cp $1 $1.cp}'
+alias cp-cp='(){cp $1 $1.cp}'
+
+alias cp-mv='(){\cp -f $1.cp $1}'
 ####################################
 #### alias end #####################
 ####################################
