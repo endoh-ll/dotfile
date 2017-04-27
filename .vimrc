@@ -61,6 +61,13 @@ set noerrorbells
 let g:vim_json_syntax_conceal = 0
 let g:indentLine_noConcealCursor=""
 
+" bufferでファイルを切り替える際に
+" 未保存のファイルでも警告を出さない
+set hidden
+
+" スワップファイルを作らない
+set noswapfile
+
 " --------------------------------------------
 "
 
