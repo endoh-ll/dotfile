@@ -169,7 +169,7 @@ alias grbmp="gcm; ggpull; gco -; grbm;"
 alias gcolog="git --no-pager reflog | awk '\$3 == \"checkout:\" && /moving from/ {print \$8}' | grep -v master | uniq | head"
 
 # tcalコマンドで今日の日付をハイライトしたカレンダーを表示
-alias tcal="cal | grep -C6 --color '`date +' %-d '`'  "
+alias cal="cal | grep -C6 --color '`date +'%-d'`' "
 
 # git grep の結果に行番号を付与
 alias gggrep="git grep --heading --break"
@@ -178,9 +178,6 @@ alias gggrep="git grep --heading --break"
 alias showoptions="set -o | sed -e 's/^no\(.*\)on$/\1  off/' -e 's/^no\(.*\)off$/\1  on/'"
 
 alias gl='git log'
-
-# tcalがcalの下位互換を持っているので、calでtcalを呼ぶようにする
-alias cal=tcal
 
 alias cp-cp='(){cp $1 $1.cp}'
 
