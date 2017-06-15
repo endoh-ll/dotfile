@@ -2,6 +2,7 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/bin/vim:$PATH
+export PATH=/usr/local/Cellar/mysql/5.7.18/bin:$PATH
 
 # rubyのバージョン管理ツールの設定
 export PATH=$HOME/.rbenv/bin:$PATH
@@ -157,6 +158,8 @@ alias excel="open -a Microsoft\ Excel"
 # soncole上からsublime textを開く
 alias sublime="open -a Sublime\ Text"
 
+alias chrome="open -a Google\ Chrome"
+
 # 暗号生成コマンド
 alias encrypt-pw="~/bin/encrypt-pw/encrypt-pw_darwin_386"
 
@@ -205,10 +208,6 @@ bindkey "^U" backward-kill-line
 # C-ESC-u or C-ESC-rでコマンド入力をしながらundo/redo
 bindkey "^[u" undo
 bindkey "^[r" redo
-
-# mysqlのpath
-PATH=$PATH:/usr/local/Cellar/mysql55/5.5.49/bin/
-export PATH
 
 ####################################
 #### plugin start ##################
