@@ -24,7 +24,6 @@ alias ctags='/usr/local/Cellar/ctags/5.8_1/bin/ctags'
 # Path to Go get
 export GOPATH=$HOME/.go
 
-
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
@@ -186,6 +185,8 @@ alias gl='git log'
 alias cp-cp='(){cp $1 $1.cp}'
 
 alias cp-mv='(){\cp -f $1.cp $1}'
+
+alias elasticsearch22='elasticsearch-2.2.2/bin/elasticsearch'
 ####################################
 #### alias end #####################
 ####################################
