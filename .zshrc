@@ -137,6 +137,10 @@ bindkey -v
 # bundle show [gem name]では絶対pathが見える
 export EDITOR=/usr/local/bin/vim
 
+
+# gmailのpasswd
+source ~/.passwd.sh
+
 ####################################
 #### alias start  ##################
 ####################################
