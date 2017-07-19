@@ -190,7 +190,7 @@ alias cp-cp='(){cp $1 $1.cp}'
 
 alias cp-mv='(){\cp -f $1.cp $1}'
 
-alias elasticsearch22='elasticsearch-2.2.2/bin/elasticsearch'
+alias elasticsearch22='/Users/shogo/elasticsearch-2.2.2/bin/elasticsearch'
 
 alias docker='/Applications/Docker.app/Contents/MacOS/Docker'
 ####################################
