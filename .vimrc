@@ -68,6 +68,8 @@ set hidden
 " スワップファイルを作らない
 set noswapfile
 
+set nofixeol
+
 " --------------------------------------------
 "
 
@@ -356,4 +358,3 @@ function! s:Jq(...)
     execute "%! jq \"" . l:arg . "\""
 endfunction
 """""""""""""""""""""""""""""
-
