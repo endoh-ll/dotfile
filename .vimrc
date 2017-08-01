@@ -139,6 +139,9 @@ nnoremap q? <NOP>
 nnoremap <C-h> :vsp<CR> :exe("tjump ".expand('<cword>'))<CR>
 nnoremap <C-k> :split<CR> :exe("tjump ".expand('<cword>'))<CR>
 
+" 検索と同じ要領でhunkを検索できる
+nmap <Leader>n <Plug>GitGutterNextHunk
+nmap <Leader>N <Plug>GitGutterPrevHunk
 
 "==============================================
 "neoBundle scripts ----------------------------
