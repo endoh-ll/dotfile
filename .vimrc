@@ -194,6 +194,7 @@ NeoBundle 'bronson/vim-trailing-whitespace'
 
 " ファイルを開いた履歴を管理
 " :MRUで一覧表示
+" :Mr, :MRでも可
 NeoBundle 'yegappan/mru'
 
 " 日本語helpを読み込む
