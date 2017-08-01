@@ -140,8 +140,9 @@ nnoremap <C-h> :vsp<CR> :exe("tjump ".expand('<cword>'))<CR>
 nnoremap <C-k> :split<CR> :exe("tjump ".expand('<cword>'))<CR>
 
 " 検索と同じ要領でhunkを検索できる
+" やっぱりshift押しながらは辛いのでmにする
 nmap <Leader>n <Plug>GitGutterNextHunk
-nmap <Leader>N <Plug>GitGutterPrevHunk
+nmap <Leader>m <Plug>GitGutterPrevHunk
 
 "==============================================
 "neoBundle scripts ----------------------------
