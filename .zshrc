@@ -175,6 +175,9 @@ alias grbmp="gcm; ggpull; gco -; grbm;"
 # 直近の移動したbranchを表示する
 alias gcolog="git --no-pager reflog | awk '\$3 == \"checkout:\" && /moving from/ {print \$8}' | grep -v master | uniq | head"
 
+# 指定したファイルをHEADに戻す
+alias gch="git checkout HEAD"
+
 # tcalコマンドで今日の日付をハイライトしたカレンダーを表示
 alias cal="cal | grep -C6 --color '`date +'%-d'`' "
 
