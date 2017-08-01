@@ -233,6 +233,9 @@ NeoBundle 'airblade/vim-gitgutter'
 " vim-tags
 NeoBundle 'szw/vim-tags'
 
+" vim the silver searcher
+NeoBundle 'rking/ag.vim'
+
 " Required:
 call neobundle#end()
 
