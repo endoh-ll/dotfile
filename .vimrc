@@ -179,8 +179,8 @@ NeoBundle 'justinmk/vim-dirvish'
 
 NeoBundle 'tpope/vim-rails'
 
-" 静的解析
-NeoBundle 'scrooloose/syntastic'
+" 非同期syntax check
+NeoBundle 'w0rp/ale'
 
 " Rubyのendを自動挿入してくれる
 NeoBundle 'tpope/vim-endwise'
@@ -289,14 +289,6 @@ if has("autocmd")
     \   exe "normal! g'\"" |
 		\ endif
 endif
-
-" --------------------------------
-" rubocop
-" --------------------------------
-" syntastic_mode_mapをactiveにするとバッファ保存時にsyntasticが走る
-" active_filetypesに、保存時にsyntasticを走らせるファイルタイプを指定する
-"let g:syntastic_mode_map = { 'mode': 'active', 'active_filetypes': ['ruby'] }
-"let g:syntastic_ruby_checkers = ['rubocop']
 
 """"""""""""""""""""""""""""""
 " 挿入モード時、ステータスラインの色を変更
