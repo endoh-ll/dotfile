@@ -195,7 +195,6 @@ alias cprc='(){\cp -f $1.cp $1}' # recovery略
 
 alias elasticsearch22='/Users/shogo/elasticsearch-2.2.2/bin/elasticsearch'
 
-alias docker='/Applications/Docker.app/Contents/MacOS/Docker'
 ####################################
 #### alias end #####################
 ####################################
