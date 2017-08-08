@@ -9,6 +9,8 @@ set number
 set ruler
 " 下から2行目にステータスを常時表示
 set laststatus=2
+set statusline=%<%f\ %h%m%r%{fugitive#statusline()}\[%{ALEGetStatusLine()}]\%=%-14.(%l,%c%V%)%P\ \[ENC=%{&fileencoding}]\ 
+
 " 検索結果をハイライト表示
 set hlsearch
 " 前の行のインデントを継続
@@ -70,6 +72,10 @@ set noswapfile
 
 " ファイルの末尾に改行コードを追加しない
 set nofixeol
+
+" ファイルセーブ時のみaleでsyntax check
+let g:ale_lint_on_save = 1
+let g:ale_lint_on_text_changed = 0
 
 " --------------------------------------------
 "
@@ -143,6 +149,10 @@ nnoremap <C-k> :split<CR> :exe("tjump ".expand('<cword>'))<CR>
 " やっぱりshift押しながらは辛いのでmにする
 nmap <Leader>n <Plug>GitGutterNextHunk
 nmap <Leader>m <Plug>GitGutterPrevHunk
+
+" aleのエラー間を移動する
+nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
 "==============================================
 "neoBundle scripts ----------------------------
@@ -292,7 +302,7 @@ endif
 
 """"""""""""""""""""""""""""""
 " 挿入モード時、ステータスラインの色を変更
-" https://sites.google.com/site/fudist/Home/vim-nihongo-ban/-vimrc-sample
+" https://sites.google.com/site/fudist/Home/vim-nihongo-ban/vim-color
 """"""""""""""""""""""""""""""
 let g:hi_insert = 'highlight StatusLine guifg=darkblue guibg=darkyellow gui=none ctermfg=blue ctermbg=yellow cterm=none'
 
@@ -330,14 +340,6 @@ endfunction
 
 let g:python3_host_prog = expand('~/.pyenv/shims/python')
 """"""""""""""""""""""""""""""
-
-
-"""""""""""""""""""""""""""""
-" vim-fugitiveの設定
-
-set laststatus=2
-set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)%P\ \[ENC=%{&fileencoding}]\ 
-"""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""
 " vim-markdownの設定
