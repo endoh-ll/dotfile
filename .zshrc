@@ -150,10 +150,11 @@ alias v=vim
 alias df="df -h"
 
 # bundle checkでinstallの必要があった場合のみbundle installするように修正
+alias be="bundle exec"
 alias beck="bundle check > /dev/null || bundle install --path=vendor/bundle --jobs=4 > /dev/null"
-alias berc="beck; bundle exec rails console"
-alias berr="beck; bundle exec rake routes"
-alias bers="beck; bundle exec rails server"
+alias berc="beck; be rails console"
+alias berr="beck; be rake routes"
+alias bers="beck; be rails server"
 
 # console上からexcelを開く
 alias excel="open -a Microsoft\ Excel"
