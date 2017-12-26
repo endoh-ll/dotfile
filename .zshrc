@@ -196,6 +196,16 @@ alias cprc='(){\cp -f $1.cp $1}' # recovery略
 
 alias elasticsearch22='/Users/shogo/elasticsearch-2.2.2/bin/elasticsearch'
 
+# ステージングされたファイルだけrubocopする
+alias git-staging-file-list="git status --porcelain | grep 'M  ' | tr -d 'M  '"
+alias git-staging-unstaging-file-list="git status --porcelain | grep 'MM ' | tr -d 'MM '"
+alias gcrubo="if [%(git-staging-file-list | wc -l) -gt 1]be rubocop -a $(git-staging-file-list); ga $(git-staging-unstaging-file-list)"
+alias gcmsgr="gcmsg $1; gcrubo"
+
+
+alias grecent="git recent"
+
+alias ping="~/scripts/zsh/ping.zsh"
 ####################################
 #### alias end #####################
 ####################################
