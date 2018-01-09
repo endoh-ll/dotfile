@@ -160,6 +160,9 @@ alias berc="beck; be rails console"
 alias berr="beck; be rake routes"
 alias bers="beck; be rails server"
 
+# rake routesの結果をファイルに出力しておく
+alias "be rake routes"="be rake routes | tee route.route"
+
 # console上からexcelを開く
 alias excel="open -a Microsoft\ Excel"
 
