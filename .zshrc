@@ -13,6 +13,10 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
+# goenv
+export PATH="$HOME/.goenv/bin:$PATH"
+eval "$(goenv init -)"
+
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/shogo/.oh-my-zsh
 
