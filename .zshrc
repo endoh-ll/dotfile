@@ -163,13 +163,11 @@ alias bers="beck; be rails server"
 # rake routesの結果をファイルに出力しておく
 alias "be rake routes"="be rake routes | tee route.route"
 
-# console上からexcelを開く
+# console上からアプリを呼び出す
 alias excel="open -a Microsoft\ Excel"
-
-# soncole上からsublime textを開く
 alias sublime="open -a Sublime\ Text"
-
 alias chrome="open -a Google\ Chrome"
+alias table_tool="open -a Table\ Tool"
 
 # 暗号生成コマンド
 alias encrypt-pw="~/bin/encrypt-pw/encrypt-pw_darwin_386"
