@@ -155,7 +155,7 @@ nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
 "==============================================
-"neoBundle scripts ----------------------------
+" NeoBundle scripts ----------------------------
 "==============================================
 if &compatible
   set nocompatible               " Be iMproved
@@ -251,6 +251,10 @@ NeoBundle 'szw/vim-tags'
 
 " vim the silver searcher
 NeoBundle 'rking/ag.vim'
+
+" ドキュメント参照
+NeoBundle 'thinca/vim-ref'
+NeoBundle 'yuku-t/vim-ref-ri'
 
 " Required:
 call neobundle#end()
