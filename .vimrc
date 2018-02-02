@@ -71,12 +71,18 @@ set hidden
 set noswapfile
 
 " ファイルの末尾に改行コードを追加しない
-set nofixeol
+" set nofixeol
 
 " ファイルセーブ時のみaleでsyntax check
 let g:ale_lint_on_save = 1
 let g:ale_lint_on_text_changed = 0
 
+" 一行が長くなっても最後まで表示する
+" http://itchyny.hatenablog.com/entry/2014/12/25/090000
+set display=lastline
+
+" 補完メニューの高さを指定
+set pumheight=10
 " --------------------------------------------
 "
 
@@ -102,6 +108,9 @@ nnoremap <Leader>wq :wq<CR>
 " 空白が2回入れたかったら<Tab>を使ってほしい
 " 空白の入力が遅れるのでコメントアウト
 " inoremap <Leader><Leader> <ESC>
+"
+" https://qiita.com/hachi8833/items/7beeee825c11f7437f54#level-5
+inoremap <silent> jj <ESC>
 
 " <Space>pと<Space>yでクリップボードに保存
 nmap <Leader>y "+y
@@ -153,6 +162,15 @@ nmap <Leader>m <Plug>GitGutterPrevHunk
 " aleのエラー間を移動する
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
+
+" Yで行末までのヤンクにする
+" http://itchyny.hatenablog.com/entry/2014/12/25/090000
+nnoremap Y y$
+
+" タブの移動をカーソル移動に似た形に変更
+nnoremap gl gt
+nnoremap gj gT
+nnoremap 9gt 1gtgT
 
 "==============================================
 " NeoBundle scripts ----------------------------
