@@ -274,6 +274,9 @@ NeoBundle 'rking/ag.vim'
 NeoBundle 'thinca/vim-ref'
 NeoBundle 'yuku-t/vim-ref-ri'
 
+" 対応するdef ~ endに%でジャンプ
+NeoBundle 'tmhedberg/matchit'
+
 " Required:
 call neobundle#end()
 
