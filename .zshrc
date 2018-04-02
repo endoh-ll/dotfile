@@ -160,8 +160,13 @@ alias berc="beck; be rails console"
 alias berr="beck; be rake routes"
 alias bers="beck; be rails server"
 
+alias buni="bundle install --path vendor/bundle --jobs=4"
+
 # rake routesの結果をファイルに出力しておく
 alias "be rake routes"="be rake routes | tee route.route"
+
+# rake taskの一覧をファイルに出力する
+alias "be rake -T"="be rake -T | tee task.task"
 
 # console上からアプリを呼び出す
 alias excel="open -a Microsoft\ Excel"
@@ -286,6 +291,20 @@ tab-color() {
 tab-reset() {
     echo -ne "\033]6;1;bg;*;default\a"
 }
+
+# alias git-staging-file-list="git status --porcelain | grep 'M  ' | tr -d 'M  '"
+# alias git-staging-unstaging-file-list="git status --porcelain | grep 'MM ' | tr -d 'MM '"
+# alias gcrubo="if [%(git-staging-file-list | wc -l) -gt 1]be rubocop -a $(git-staging-file-list); ga $(git-staging-unstaging-file-list)"
+# alias gcmsgr="gcmsg $1; gcrubo"
+
+# file_countが文字列として認識されて失敗する
+# git-staging-rubocop() {
+#   local -i file_count;
+#   file_count="$((git-staging-file-list | wc -l | tr -d ' '))"
+#   if [ file_count -ge 1 ]; then
+#     gcrubo
+#   fi
+# }
 
 
 ####################################

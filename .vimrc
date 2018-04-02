@@ -110,6 +110,9 @@ nnoremap <Leader>wq :wq<CR>
 " inoremap <Leader><Leader> <ESC>
 "
 " https://qiita.com/hachi8833/items/7beeee825c11f7437f54#level-5
+"
+" jjでインサートモードを抜ける
+" タイプした後ですぐに上下にカーソル移動できる
 inoremap <silent> jj <ESC>
 
 " <Space>pと<Space>yでクリップボードに保存
@@ -169,7 +172,7 @@ nnoremap Y y$
 
 " タブの移動をカーソル移動に似た形に変更
 nnoremap gl gt
-nnoremap gj gT
+nnoremap gh gT
 nnoremap 9gt 1gtgT
 
 "==============================================
