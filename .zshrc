@@ -152,6 +152,8 @@ alias sudo='sudo '
 alias hist=history
 alias v=vim
 alias df="df -h"
+alias cat="cat -n"
+
 
 # bundle checkでinstallの必要があった場合のみbundle installするように修正
 alias be="bundle exec"
