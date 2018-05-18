@@ -201,6 +201,7 @@ alias gggrep="git grep --heading --break"
 alias showoptions="set -o | sed -e 's/^no\(.*\)on$/\1  off/' -e 's/^no\(.*\)off$/\1  on/'"
 
 alias gl='git log'
+alias gb='git branch -vv'
 
 # ファイルのコピーとコピーからの復帰を1つのコマンドで行なう
 alias cpbk='(){cp $1 $1.cp}'
@@ -218,6 +219,8 @@ alias gcmsgr="gcmsg $1; gcrubo"
 alias grecent="git recent"
 
 alias ping="~/scripts/zsh/ping.zsh"
+
+alias fz="fzf"
 ####################################
 #### alias end #####################
 ####################################
@@ -240,6 +243,32 @@ bindkey "^U" backward-kill-line
 # C-ESC-u or C-ESC-rでコマンド入力をしながらundo/redo
 bindkey "^[u" undo
 bindkey "^[r" redo
+
+# fzfをzshで使う
+# https://github.com/statico/dotfiles/blob/340c01d0970bc2cd6a27284ddb87774131c00e5c/.zshrc#L812-L829
+# https://postd.cc/vim3/
+
+# Returns whether the given command is executable or aliased.
+_has() {
+  return $( whence $1 >/dev/null )
+}
+
+# 補完を有効化
+if [ -e /usr/local/opt/fzf/shell/completion.zsh ]; then
+  source /usr/local/opt/fzf/shell/key-bindings.zsh
+  source /usr/local/opt/fzf/shell/completion.zsh
+fi
+
+# fzfとagがインストールされているならfzfにagを使う
+if _has fzf && _has ag; then
+  export FZF_DEFAULT_COMMAND='ag --nocolor -g ""'
+  export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+  export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND"
+  export FZF_DEFAULT_OPTS='
+  --color fg:242,bg:236,hl:65,fg+:15,bg+:239,hl+:108
+  --color info:108,prompt:109,spinner:108,pointer:168,marker:168
+  '
+fi
 
 ####################################
 #### plugin start ##################

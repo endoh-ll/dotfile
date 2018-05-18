@@ -129,8 +129,9 @@ vmap <Leader>P "+P
 " 連打されると戻れない
 nnoremap <CR><CR> mrG
 nnoremap <BS><BS> mrgg
-nnoremap <CR>r g'r
-nnoremap <BS>r g'r
+" 基本機能の g; で充分
+" nnoremap <CR>r g'r
+" nnoremap <BS>r g'r
 
 " 選択範囲をvで単語、段落、行...と拡大できる
 " <C-v>で1つ前のレベルに戻せる
@@ -141,7 +142,7 @@ vmap <C-v> <Plug>(expand_region_shrink)
 nnoremap <C-a> ggvGG$
 
 " <Space-:>でコマンド履歴表示
-" <Space-/>で検索履歴表示
+" <Space-;>で検索履歴表示
 nnoremap <Leader>: q:
 nnoremap <Leader>; q/
 
@@ -174,6 +175,9 @@ nnoremap Y y$
 nnoremap gl gt
 nnoremap gh gT
 nnoremap 9gt 1gtgT
+
+nmap ; :Buffers
+nmap t :Files
 
 "==============================================
 " NeoBundle scripts ----------------------------
@@ -271,7 +275,9 @@ NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'szw/vim-tags'
 
 " vim the silver searcher
-NeoBundle 'rking/ag.vim'
+" ag.vimは非推奨らしいのでack.vim
+" NeoBundle 'rking/ag.vim'
+NeoBundle 'mileszs/ack.vim'
 
 " ドキュメント参照
 NeoBundle 'thinca/vim-ref'
@@ -279,6 +285,9 @@ NeoBundle 'yuku-t/vim-ref-ri'
 
 " 対応するdef ~ endに%でジャンプ
 NeoBundle 'tmhedberg/matchit'
+
+" vimでfzf検索
+NeoBundle 'junegunn/fzf.vim'
 
 " Required:
 call neobundle#end()
@@ -388,4 +397,10 @@ function! s:Jq(...)
     endif
     execute "%! jq \"" . l:arg . "\""
 endfunction
+"""""""""""""""""""""""""""""
+
+"""""""""""""""""""""""""""""
+" ack.vimでAgを使う
+" https://qiita.com/Biacco/items/b750c073a92a8e9fea7d
+let g:ackprg = 'ag --nogroup --nocolor --column'
 """""""""""""""""""""""""""""
